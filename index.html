@@ -1,11 +1,185 @@
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Bootstrap 5 Demo</title>
+   <!--bootstrap 5 resources-->
+   <!-- Latest compiled and minified CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+   <!-- Latest compiled JavaScript -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    
+<!--Lesson Plan
+# read overview
+1. bootstrap setup
+2. containers
+3. grid - https://www.w3schools.com/bootstrap5/bootstrap_grid_system.php
+4. "button"?
+5. navbar - https://www.w3schools.com/bootstrap5/bootstrap_navbar.php
+6. carousel - https://www.w3schools.com/bootstrap5/bootstrap_carousel.php
+-->
+<body class="bg-light text-black">
+   <!-- bootstrap container fill full width of screen -->
+   <div class="container-fluid">
+       <!--bootstrap navbar-->
+       <!-- Student challenge: Add a logo -->
+       <!--copy sample code, but understand it
+       https://www.w3schools.com/bootstrap5/bootstrap_navbar.php
+       -->
+       <nav class="navbar navbar-expand-sm " style="background-color: pink; ">
+           <div class="container-fluid" style="background-color: pink; ;">
+               <ul class="navbar-nav" style="background-color: pink;">
+                <a class="navbar-brand" href="#"> <img src="images/transparent-TO-logo.png" style="width: 50px; height: 50px; "></a>
+                   <li class="nav-item" >
+                       <a class="nav-link active" href="index.html"><strong>Home</strong></a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="about.html">About</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="contact.html">Contact</a>
+
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="order.html">Order</a>
+
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="large.html">Ocassions</a>
+
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="cart.html">Cart</a>
+
+                   </li>
+               </ul>
+           </div>
+       </nav>
+
+           <div class="col-md-2"></div>
+
+            
+   <br>
+   <!--bootstrap grid-->
+   <!-- change grid to 5 columns with size 4 4 2 1 1 -->
+   <!-- container with default bootstrap margins -->
+   <div class="container">
+       <div class="row">
+           <div class="row">
+  <div class="col-md-4">
+    <div class="media">
+      <img src="images/Screenshot 2025-11-06 105713.png" class="menu-img" alt="Menu 1">
+      <a href="regular.html" class="overlay"><span class="text">Regular</span></a>
+    </div>
+    <br>
+    <a class="btn btn-primary" href="regular.html" role="button" style="background-color: rgba(255, 192, 203, 0.623); color: black;margin-top: 20px;">Order Regular Menu</a>
+  </div>
+
+  <div class="col-md-4">
+    <div class="media">
+      <img src="images//evil-cupcake.png" class="menu-img" alt="Menu 2">
+      <a href="special.html" class="overlay"><span class="text">Special</span></a>
+    </div>
+    <br>
+    <a class="btn btn-primary" href="regular.html" role="button" style="background-color: rgba(255, 192, 203, 0.623); color: black ; margin-top: 20px;">Order Special Menu</a>
+  </div>
+
+  <div class="col-md-4">
+    <div class="media">
+      <img src="images/drake-cup.png" class="menu-img" alt="Menu 3">
+      <a href="custom.html" class="overlay"><span class="text">Custom</span></a>
+    </div>
+    <br>
+    <a class="btn btn-primary" href="regular.html" role="button" style="background-color: rgba(255, 192, 203, 0.623); color: black;margin-top: 20px;margin-bottom: 80px;">Order Custom</a>
+  </div>
+  
+</div>
+
+       <div class="row">
+           <div class="row">
+        
+  <div class="col-md-4">
+    <div class="media">
+      <img src="images/Screenshot 2025-11-06 105713.png" class="menu-img" alt="Menu 1">
+      <a href="regular.html" class="overlay"><span class="text">Regular</span></a>
+    </div>
+    <br>
+    <a class="btn btn-primary" href="regular.html" role="button" style="background-color: rgba(255, 192, 203, 0.623); color: black;margin-top: 20px;">Order Regular Menu</a>
+  </div>
+
+  <div class="col-md-4">
+    <div class="media">
+      <img src="images//evil-cupcake.png" class="menu-img" alt="Menu 2">
+      <a href="special.html" class="overlay"><span class="text">Special</span></a>
+    </div>
+    <br>
+    <a class="btn btn-primary" href="regular.html" role="button" style="background-color: rgba(255, 192, 203, 0.623); color: black ; margin-top: 20px;">Order Special Menu</a>
+  </div>
+
+  <div class="col-md-4">
+    <div class="media">
+      <img src="images/drake-cup.png" class="menu-img" alt="Menu 3">
+      <a href="custom.html" class="overlay"><span class="text">Custom</span></a>
+    </div>
+    <br>
+    <a class="btn btn-primary" href="regular.html" role="button" style="background-color: rgba(255, 192, 203, 0.623); color: black;margin-top: 20px;">Order Custom</a>
+  </div>
+</div>
+
+
+
+           </div>
+       </div>
+       <div class="row" style="border-color: rgba(128, 0, 128, 0.411);">
+        <div class="col-md-6 mt-5 p-3 mx-auto border m-2" style="width:200px ">
+            <h2>About Me</h2>
+            <p>My Name is Jonah</p>
+             <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" title="Click here for nothing!">
+    Information!
+  </button>
+  <br>
+  <br>
+            <div class="progress" style="width: 150px;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:65%" >Tri</div>
+            </div>
+        </div>
+       </div>
+       <div class="row" style="border-color: rgba(128, 0, 128, 0.411);">
+        <div class="col-md-4">
+            <h2>4 col</h2>
+        </div>
+        
+        <div class="col-md-4">
+            <h2>4 col</h2>
+            <p>Content here</p>
+        </div>
+        <div class="col-md-2">
+            <h2>2 Col</h2>
+            <p>Content here</p>
+        </div>
+        <div class="col-md-1">
+            <h2>1 col</h2>
+            <p>Content here</p>
+        </div>
+        <div class="col-md-1">
+            <h2>1 col</h2>
+            <p>Content here</p>
+        </div>
+       </div>
+   </div>
+
+   <script>
+// Initialize tooltips
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+</script>
 </body>
 </html>
+ 

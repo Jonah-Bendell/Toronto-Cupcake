@@ -1,0 +1,65 @@
+nav{
+    background-color: pink;
+}
+
+nav li{
+
+    margin-right: 5%;
+    margin-left: 5%;
+
+
+    font-size: 30px;
+
+
+}
+nav a.nav-link.active { 
+  font-weight: 700; 
+      background-color: rgba(250, 228, 232, 0.548);
+        border-radius: 20px;
+
+}
+
+
+.media{
+  position: relative;
+  display: inline-block;         
+  width: 400px;
+  border-radius: 20px;
+}
+
+.menu-img {
+  width: 400px;
+  height: 400px;       /* same height for all */
+  object-fit: cover;   /* keeps proportions */
+  border-radius: 20px;
+}
+
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 3, 8, 0.411);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  opacity: 0;
+  transform: translateY(4%);
+  transition: opacity .25s ease, transform .25s ease;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.media:hover .overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.overlay .text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  padding: .5rem .85rem;
+  background: rgba(255, 0, 195, 0.517);
+  border-radius: .5rem;
+}
