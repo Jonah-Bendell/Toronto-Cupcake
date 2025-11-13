@@ -68,4 +68,21 @@ nav a.nav-link.active {
 }
 
 
+.order-img {
+  width: 400px;
+  height: 400px;       
+  
+  border-radius: 20px;
+}
 
+.order-button{
+  background-color: pink;
+  color: black;
+}
+.cupcake-img{
+  width: 150px;
+  height: auto;
+}
+.order-button{
+  margin-top: 10px;
+}
