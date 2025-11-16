@@ -1,41 +1,29 @@
- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Bootstrap 5 Demo</title>
-   <!--bootstrap 5 resources-->
-   <!-- Latest compiled and minified CSS -->
+   <title>Regular</title>
+
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
-   <!-- Latest compiled JavaScript -->
+
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
    <link rel="stylesheet" href="css/style.css">
 </head>
-<!--Lesson Plan
-# read overview
-1. bootstrap setup
-2. containers
-3. grid - https://www.w3schools.com/bootstrap5/bootstrap_grid_system.php
-4. "button"?
-5. navbar - https://www.w3schools.com/bootstrap5/bootstrap_navbar.php
-6. carousel - https://www.w3schools.com/bootstrap5/bootstrap_carousel.php
--->
+
 <body class="bg-light text-black">
-   <!-- bootstrap container fill full width of screen -->
+
    <div class="container-fluid"> 
-       <!--bootstrap navbar-->
-       <!-- Student challenge: Add a logo -->
-       <!--copy sample code, but understand it
-       https://www.w3schools.com/bootstrap5/bootstrap_navbar.php
-       -->
+
        <nav class="navbar navbar-expand-sm " style="background-color: pink; ">
-           <div class="container-fluid" style="background-color: pink; ;">
+           <div class="container-fluid" style="background-color: pink;">
                <ul class="navbar-nav" style="background-color: pink;">
-                <a class="navbar-brand" href="#"> <img src="images/transparent-TO-logo.png" style="width: 50px; height: 50px; "></a>
-                   <li class="nav-item" >
+                <a class="navbar-brand" href="#">
+                  <img src="images/transparent-TO-logo.png" style="width: 50px; height: 50px;">
+                </a>
+                   <li class="nav-item">
                        <a class="nav-link " href="index.html"><strong>Home</strong></a>
                    </li>
                    <li class="nav-item">
@@ -43,164 +31,248 @@
                    </li>
                    <li class="nav-item">
                        <a class="nav-link" href="contact.html">Contact</a>
-
                    </li>
                    <li class="nav-item">
                        <a class="nav-link" href="order.html">Order</a>
-
                    </li>
-                   <li class="nav-item">
-                       <a class="nav-link" href="large.html">Ocassions</a>
-
-                   </li>
+          
                    <li class="nav-item">
                        <a class="nav-link" href="cart.html">Cart</a>
-
                    </li>
                </ul>
            </div>
-           
        </nav>
+
        <br>
+
       <div class="container py-4">
-  <div class="row g-4 text-center">
 
-    <div class="col-md-12">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body">
-          <h1 class="h1 mb-3"><strong>One Click 1 Dozen</strong></h1>
+   
+        <div class="row g-4 text-center">
+          <div class="col-12">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h1 class="h1 mb-3"><strong>One Click 1 Dozen</strong></h1>
 
-          <div class="media mx-auto"> <!-- AI helped trouble shoot here as I had problems with fitting the page-->
-            <img
-              src="images/Order Cupcakes/IMG_2784.jpeg"
-              class="menu-img img-fluid d-block"
+                <div class="media mx-auto">
+                  <img
+                    src="images/Order Cupcakes/IMG_2784.jpeg"
+                    class="menu-img img-fluid d-block"
+                    alt="One dozen cupcakes"
+                  >
+                </div>
 
-            >
-
+                <div class="cart-controls mt-3 d-inline-flex align-items-center gap-2">
+                  <label for="qtyDozen" class="mb-0">QTY</label>
+                  <input id="qtyDozen" type="number" class="form-control form-control-sm quantity" min="1" value="1" style="width:90px;">
+                  <button class="btn order-button" id="regDozen">Add to Cart</button>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="range-container">
-<div class="cart-controls">
-    <label for="quantity">QTY</label>
-    <input type="number" class="quantity" name="quantity" min="1" value="1">
-    <button class="order-button" id="regDozen" >Add to Cart</button>
-</div>
-
-</div>
-
         </div>
-      </div>
-    </div>
-<div class="row">
-    <div class="col-md-3">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body">
-            <h4>Chocolate Peanut Butter</h4>
-            <img src="images/Order Cupcakes/chocolatepeanutbutter.webp" alt="" class="cupcake-img">
-            <div class="cart-controls">
-    <label for="quantity">QTY</label>
-    <input type="number" class="quantity" name="quantity" min="1" value="1">
-    <button class="order-button" id="ChocPeanut" >Add to Cart</button>
-</div>
-          </div>
+       
 
-        </div>
-      </div>
+        
+        <div class="row g-4 mt-1 text-center">
 
-
-    <div class="col-md-3">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body">
-<h4>Chocolate Hazelnut</h4>
-            <img src="images/Order Cupcakes/chocolatehazelnut.webp" alt="" class="cupcake-img">
-            <div class="cart-controls">
-    <label for="quantity">QTY</label>
-    <input type="number" class="quantity" name="quantity" min="1" value="1">
-    <button class="order-button" id="chocHazel" >Add to Cart</button>
-</div>
+          <!-- Chocolate Peanut Butter -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card h-100 shadow-sm cupcake-card"
+                 data-name="Chocolate Peanut Butter"
+                 data-description="Rich chocolate cake topped with creamy peanut butter frosting and crunchy peanut bits."
+                 data-ingredients="Chocolate cake|Peanut butter frosting|Peanuts|Eggs|Milk">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h4 class="h6 mb-3">Chocolate Peanut Butter</h4>
+                <img src="images/Order Cupcakes/chocolatepeanutbutter.webp"
+                     alt="Chocolate Peanut Butter"
+                     class="cupcake-img img-fluid mx-auto mb-2">
+                <div class="cart-controls d-inline-flex align-items-center gap-2 mt-auto">
+                  <label class="mb-0">QTY</label>
+                  <input type="number" class="form-control form-control-sm quantity" min="1" value="1" style="width:90px;">
+                  <button class="btn order-button" id="ChocPeanut">Add to Cart</button>
+                </div>
+              </div>
+            </div>
           </div>
 
-        </div>
-      </div>
-
-    <div class="col-md-3">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body">
-<h4>Vanilla Coconut</h4>
-<img src="images/Order Cupcakes/vanillacoconut.webp" alt="" class="cupcake-img">
-            <div class="cart-controls">
-    <label for="quantity">QTY</label>
-    <input type="number" class="quantity" name="quantity" min="1" value="1">
-    <button class="order-button" id="vanillaCoconut" >Add to Cart</button>
+          <!-- Chocolate Hazelnut -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card h-100 shadow-sm cupcake-card"
+                 data-name="Chocolate Hazelnut"
+                 data-description="Chocolate cupcake with smooth hazelnut frosting and crunchy topping."
+                 data-ingredients="Chocolate cake|Hazelnut frosting|Hazelnuts|Eggs|Milk">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h4 class="h6 mb-3">Chocolate Hazelnut</h4>
+                <img src="images/Order Cupcakes/chocolatehazelnut.webp"
+                     alt="Chocolate Hazelnut"
+                     class="cupcake-img img-fluid mx-auto mb-2">
+                <div class="cart-controls d-inline-flex align-items-center gap-2 mt-auto">
+                  <label class="mb-0">QTY</label>
+                  <input type="number" class="form-control form-control-sm quantity" min="1" value="1" style="width:90px;">
+                  <button class="btn order-button" id="chocHazel">Add to Cart</button>
+                </div>
+              </div>
+            </div>
           </div>
 
-        </div>
-      </div>
-
-    <div class="col-md-3">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body">
-<h4>Chocolate Coconut</h4>
+          <!-- Vanilla Coconut -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card h-100 shadow-sm cupcake-card"
+                 data-name="Vanilla Coconut"
+                 data-description="Soft vanilla cupcake topped with fluffy coconut frosting."
+                 data-ingredients="Vanilla cake|Coconut frosting|Coconut flakes|Eggs|Milk">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h4 class="h6 mb-3">Vanilla Coconut</h4>
+                <img src="images/Order Cupcakes/vanillacoconut.webp"
+                     alt="Vanilla Coconut"
+                     class="cupcake-img img-fluid mx-auto mb-2">
+                <div class="cart-controls d-inline-flex align-items-center gap-2 mt-auto">
+                  <label class="mb-0">QTY</label>
+                  <input type="number" class="form-control form-control-sm quantity" min="1" value="1" style="width:90px;">
+                  <button class="btn order-button" id="vanillaCoconut">Add to Cart</button>
+                </div>
+              </div>
+            </div>
           </div>
 
-        </div>
-      </div>
-    
-</div>
-<div class="row">
-<div class="col-md-3">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body">
-<h4>Chocolate Vanilla</h4>
-          </div>
-
-        </div>
-      </div>
-
-
-    <div class="col-md-3">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body">
-<h4>Red Velvet</h4>
-
-          </div>
-
-        </div>
-      </div>
-
-    <div class="col-md-3">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body">
-<h4>Vanilla Vanilla</h4>
-          </div>
-
-        </div>
-      </div>
-
-    <div class="col-md-3">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body">
-<h4>Vanilla Choco Ganache</h4>
+          <!-- Chocolate Coconut -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card h-100 shadow-sm cupcake-card"
+                 data-name="Chocolate Coconut"
+                 data-description="Chocolate cupcake topped with coconut frosting and shredded coconut."
+                 data-ingredients="Chocolate cake|Coconut frosting|Coconut flakes|Eggs|Milk">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h4 class="h6 mb-3">Chocolate Coconut</h4>
+                <img src="images/Order Cupcakes/chocolatecoconut.webp"
+                     alt="Chocolate Coconut"
+                     class="cupcake-img img-fluid mx-auto mb-2">
+                <div class="cart-controls d-inline-flex align-items-center gap-2 mt-auto">
+                  <label class="mb-0">QTY</label>
+                  <input type="number" class="form-control form-control-sm quantity" min="1" value="1" style="width:90px;">
+                  <button class="btn order-button" id="chocolateCoconut">Add to Cart</button>
+                </div>
+              </div>
+            </div>
           </div>
 
         </div>
-      </div>
-      <br>
-      </div>
-</div>
 
-  </div>
-</div>
-</div>
+        
+        <div class="row g-4 mt-1 text-center">
 
-          
+          <!-- Chocolate Vanilla -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card h-100 shadow-sm cupcake-card"
+                 data-name="Chocolate Vanilla"
+                 data-description="Chocolate base with classic vanilla frosting."
+                 data-ingredients="Chocolate cake|Vanilla frosting|Eggs|Milk">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h4 class="h6 mb-3">Chocolate Vanilla</h4>
+                <img src="images/Order Cupcakes/chocolatevanilla.webp"
+                     alt="Chocolate Vanilla"
+                     class="cupcake-img img-fluid mx-auto mb-2">
+                <div class="cart-controls d-inline-flex align-items-center gap-2 mt-auto">
+                  <label class="mb-0">QTY</label>
+                  <input type="number" class="form-control form-control-sm quantity" min="1" value="1" style="width:90px;">
+                  <button class="btn order-button" id="chocolatevanilla">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Red Velvet -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card h-100 shadow-sm cupcake-card"
+                 data-name="Red Velvet"
+                 data-description="Classic red velvet cupcake with cream cheese frosting."
+                 data-ingredients="Red velvet cake|Cream cheese frosting|Eggs|Milk">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h4 class="h6 mb-3">Red Velvet</h4>
+                <img src="images/Order Cupcakes/redvelvet.webp"
+                     alt="Red Velvet"
+                     class="cupcake-img img-fluid mx-auto mb-2">
+                <div class="cart-controls d-inline-flex align-items-center gap-2 mt-auto">
+                  <label class="mb-0">QTY</label>
+                  <input type="number" class="form-control form-control-sm quantity" min="1" value="1" style="width:90px;">
+                  <button class="btn order-button" id="redVelvet">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vanilla Vanilla -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card h-100 shadow-sm cupcake-card"
+                 data-name="Vanilla Vanilla"
+                 data-description="Double vanilla – moist vanilla cake with vanilla buttercream."
+                 data-ingredients="Vanilla cake|Vanilla frosting|Eggs|Milk">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h4 class="h6 mb-3">Vanilla Vanilla</h4>
+                <img src="images/Order Cupcakes/vanillavanilla.webp"
+                     alt="Vanilla Vanilla"
+                     class="cupcake-img img-fluid mx-auto mb-2">
+                <div class="cart-controls d-inline-flex align-items-center gap-2 mt-auto">
+                  <label class="mb-0">QTY</label>
+                  <input type="number" class="form-control form-control-sm quantity" min="1" value="1" style="width:90px;">
+                  <button class="btn order-button" id="vanillaVanilla">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vanilla Choco Ganache -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card h-100 shadow-sm cupcake-card"
+                 data-name="Vanilla Choco Ganache"
+                 data-description="Vanilla cupcake topped with rich chocolate ganache."
+                 data-ingredients="Vanilla cake|Chocolate ganache|Eggs|Milk">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h4 class="h6 mb-3">Vanilla Choco Ganache</h4>
+                <img src="images/Order Cupcakes/vanillachocolateganache.webp"
+                     alt="Vanilla Choco Ganache"
+                     class="cupcake-img img-fluid mx-auto mb-2">
+                <div class="cart-controls d-inline-flex align-items-center gap-2 mt-auto">
+                  <label class="mb-0">QTY</label>
+                  <input type="number" class="form-control form-control-sm quantity" min="1" value="1" style="width:90px;">
+                  <button class="btn order-button" id="vanillaChocolateGanache">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div> 
+   </div> 
+
+   <!-- Cupcake Info Modal -->
+   <div class="modal fade" id="cupcakeModal" tabindex="-1" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title" id="cupcakeModalLabel">Cupcake details</h5>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body">
+           <img id="modalCupcakeImg"  alt="" class="img-fluid mb-3 rounded">
+           <p id="modalDescription" class="mb-3"></p>
+           <h6>Ingredients</h6>
+           <ul id="modalIngredients" class="mb-0"></ul>
+         </div>
+       </div>
+     </div>
+   </div>
 
    <script>
-// Initialize tooltips
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new bootstrap.Tooltip(tooltipTriggerEl)
-})
-</script>
+
+   var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+   var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+     return new bootstrap.Tooltip(tooltipTriggerEl)
+   })
+
+   
+   </script>
+   <script src="js/cupcakeInfo.js"></script>
 </body>
 </html>
- 

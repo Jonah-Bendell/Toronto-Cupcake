@@ -1,11 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Holiday</title>
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    
+
+<body class="bg-light text-black">
+   <div class="container-fluid"> 
+ 
+       <nav class="navbar navbar-expand-sm" style="background-color: pink;">
+           <div class="container-fluid" style="background-color: pink;">
+               <ul class="navbar-nav" style="background-color: pink;">
+                 <a class="navbar-brand" href="#">
+                   <img src="images/transparent-TO-logo.png" style="width: 50px; height: 50px;">
+                 </a>
+                 <li class="nav-item">
+                     <a class="nav-link" href="index.html"><strong>Home</strong></a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="about.html"><strong>About</strong></a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="contact.html">Contact</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="order.html">Order</a>
+                 </li>
+           
+                 <li class="nav-item">
+                     <a class="nav-link" href="cart.html">Cart</a>
+                 </li>
+               </ul>
+           </div>
+       </nav>
+
+       <br>
+
+      <div class="container py-4">
+
+
+        <div class="row g-4 mt-1 text-center">
+
+          <!-- All That Jazz – Chocolate Peanut Butter -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card h-100 shadow-sm cupcake-card"
+                 data-name="All That Jazz – Chocolate Peanut Butter"
+                 data-description="A rich chocolate cupcake topped with creamy peanut butter frosting and a gold saxophone chocolate piece – perfect for music lovers."
+                 data-ingredients="Chocolate cake|Peanut butter frosting|Gold saxophone chocolate|Eggs|Milk|Wheat">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h4 class="h6 mb-3">All That Jazz – Chocolate Peanut Butter</h4>
+                <img src="images/Order Cupcakes/jazz.jpg"
+                     alt="All That Jazz – Chocolate Peanut Butter"
+                     class="cupcake-img img-fluid mx-auto mb-2">
+                <div class="cart-controls d-inline-flex align-items-center gap-2 mt-auto">
+                  <label class="mb-0">QTY</label>
+                  <input type="number" class="form-control form-control-sm quantity" min="1" value="1" style="width:90px;">
+                  <button class="btn order-button" id="ChocPeanut">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pride Day – Chocolate Hazelnut -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card h-100 shadow-sm cupcake-card"
+                 data-name="Pride Day – Chocolate Hazelnut"
+                 data-description="Decadent chocolate hazelnut cupcake crowned with a rainbow flag topper celebrating Pride."
+                 data-ingredients="Chocolate cake|Hazelnut buttercream|Rainbow sugar topper|Hazelnuts|Eggs|Milk|Wheat">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h4 class="h6 mb-3">Pride Day – Chocolate Hazelnut</h4>
+                <img src="images/Order Cupcakes/PrideDay.jpg"
+                     alt="Pride Day – Chocolate Hazelnut"
+                     class="cupcake-img img-fluid mx-auto mb-2">
+                <div class="cart-controls d-inline-flex align-items-center gap-2 mt-auto">
+                  <label class="mb-0">QTY</label>
+                  <input type="number" class="form-control form-control-sm quantity" min="1" value="1" style="width:90px;">
+                  <button class="btn order-button" id="chocHazel">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Canada Day – Vanilla Coconut -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card h-100 shadow-sm cupcake-card"
+                 data-name="Canada Day – Vanilla Coconut"
+                 data-description="A fluffy vanilla cupcake with coconut frosting, topped with a bright red maple leaf for Canada Day."
+                 data-ingredients="Vanilla cake|Coconut frosting|Red maple leaf fondant|Coconut flakes|Eggs|Milk|Wheat">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h4 class="h6 mb-3">Canada Day – Vanilla Coconut</h4>
+                <img src="images/Order Cupcakes/canadaday.webp"
+                     alt="Canada Day – Vanilla Coconut"
+                     class="cupcake-img img-fluid mx-auto mb-2">
+                <div class="cart-controls d-inline-flex align-items-center gap-2 mt-auto">
+                  <label class="mb-0">QTY</label>
+                  <input type="number" class="form-control form-control-sm quantity" min="1" value="1" style="width:90px;">
+                  <button class="btn order-button" id="vanillaCoconut">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Easter – Chocolate Coconut -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card h-100 shadow-sm cupcake-card"
+                 data-name="Easter – Chocolate Coconut"
+                 data-description="Chocolate cupcake with pastel coconut frosting, topped with colourful mini eggs for an Easter treat."
+                 data-ingredients="Chocolate cake|Vanilla-coconut frosting|Candy eggs|Coconut flakes|Eggs|Milk|Wheat">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h4 class="h6 mb-3">Easter – Chocolate Coconut</h4>
+                <img src="images/Order Cupcakes/Easter.jpg"
+                     alt="Easter – Chocolate Coconut"
+                     class="cupcake-img img-fluid mx-auto mb-2">
+                <div class="cart-controls d-inline-flex align-items-center gap-2 mt-auto">
+                  <label class="mb-0">QTY</label>
+                  <input type="number" class="form-control form-control-sm quantity" min="1" value="1" style="width:90px;">
+                  <button class="btn order-button" id="chocolateCoconut">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="row g-4 mt-1 text-center">
+
+          <!-- Golden Gala – Chocolate Vanilla -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card h-100 shadow-sm cupcake-card"
+                 data-name="Golden Gala – Chocolate Vanilla"
+                 data-description="A chocolate cupcake with smooth vanilla frosting, topped with an elegant gold accent for special occasions."
+                 data-ingredients="Chocolate cake|Vanilla buttercream|Gold sugar decoration|Eggs|Milk|Wheat">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h4 class="h6 mb-3">Golden Gala – Chocolate Vanilla</h4>
+                <img src="images/Order Cupcakes/IMG_2784.jpeg"
+                     alt="Golden Gala – Chocolate Vanilla"
+                     class="cupcake-img img-fluid mx-auto mb-2">
+                <div class="cart-controls d-inline-flex align-items-center gap-2 mt-auto">
+                  <label class="mb-0">QTY</label>
+                  <input type="number" class="form-control form-control-sm quantity" min="1" value="1" style="width:90px;">
+                  <button class="btn order-button" id="chocolatevanilla">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cookie Monster – Red Velvet -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card h-100 shadow-sm cupcake-card"
+                 data-name="Cookie Monster – Red Velvet"
+                 data-description="A playful red velvet cupcake covered in blue sprinkles, finished with candy eyes and a mini cookie."
+                 data-ingredients="Red velvet cake|Vanilla frosting|Blue sprinkles|Cookie piece|Candy eyes|Eggs|Milk|Wheat">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h4 class="h6 mb-3">Cookie Monster – Red Velvet</h4>
+                <img src="images/Order Cupcakes/custom2.webp"
+                     alt="Cookie Monster – Red Velvet"
+                     class="cupcake-img img-fluid mx-auto mb-2">
+                <div class="cart-controls d-inline-flex align-items-center gap-2 mt-auto">
+                  <label class="mb-0">QTY</label>
+                  <input type="number" class="form-control form-control-sm quantity" min="1" value="1" style="width:90px;">
+                  <button class="btn order-button" id="redVelvet">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lights, Camera, Action! – Vanilla Vanilla -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card h-100 shadow-sm cupcake-card"
+                 data-name="Lights, Camera, Action! – Vanilla Vanilla"
+                 data-description="A vanilla-on-vanilla cupcake topped with a gold comedy-and-tragedy mask – ideal for film or theatre nights."
+                 data-ingredients="Vanilla cake|Vanilla buttercream|Gold mask chocolate|Eggs|Milk|Wheat">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h4 class="h6 mb-3">Lights, Camera, Action! – Vanilla Vanilla</h4>
+                <img src="images/Order Cupcakes/Tiff.jpg"
+                     alt="Lights, Camera, Action! – Vanilla Vanilla"
+                     class="cupcake-img img-fluid mx-auto mb-2">
+                <div class="cart-controls d-inline-flex align-items-center gap-2 mt-auto">
+                  <label class="mb-0">QTY</label>
+                  <input type="number" class="form-control form-control-sm quantity" min="1" value="1" style="width:90px;">
+                  <button class="btn order-button" id="vanillaVanilla">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- St. Patrick's Day – Vanilla Choco Ganache -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card h-100 shadow-sm cupcake-card"
+                 data-name="St. Patrick's Day – Vanilla Choco Ganache"
+                 data-description="A vanilla cupcake topped with smooth chocolate ganache and a lucky green shamrock."
+                 data-ingredients="Vanilla cake|Chocolate ganache|Shamrock fondant|Eggs|Milk|Wheat">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h4 class="h6 mb-3">St. Patrick's Day – Vanilla Choco Ganache</h4>
+                <img src="images/Order Cupcakes/stpattysday.webp"
+                     alt="St. Patrick's Day – Vanilla Choco Ganache"
+                     class="cupcake-img img-fluid mx-auto mb-2">
+                <div class="cart-controls d-inline-flex align-items-center gap-2 mt-auto">
+                  <label class="mb-0">QTY</label>
+                  <input type="number" class="form-control form-control-sm quantity" min="1" value="1" style="width:90px;">
+                  <button class="btn order-button" id="vanillaChocolateGanache">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div> 
+
+      </div> 
+   </div> 
+
+   <!-- Cupcake Info Modal -->
+   <div class="modal fade" id="cupcakeModal" tabindex="-1" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title" id="cupcakeModalLabel">Cupcake details</h5>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body">
+           <img id="modalCupcakeImg" alt="" class="img-fluid mb-3 rounded">
+           <p id="modalDescription" class="mb-3"></p>
+           <h6>Ingredients</h6>
+           <ul id="modalIngredients" class="mb-0"></ul>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   <script>
+
+   var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+   var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+     return new bootstrap.Tooltip(tooltipTriggerEl)
+   })
+   </script>
+   <script src="js/cupcakeInfo.js"></script>
 </body>
 </html>
